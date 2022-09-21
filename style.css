@@ -1,0 +1,303 @@
+*{    box-sizing: border-box;}
+body{
+    margin:0%;
+    font-family: 'Alumni Sans Pinstripe', sans-serif ;
+}
+h1{    font-size: 2em;
+    font-weight: bold;
+margin: 0%;
+padding: auto;}
+h2{    font-size: 1.7em;}
+h4{    font-size: 1.5em;}
+span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a{ text-decoration: none;
+font-size: 0.85em;}
+button{font-size:0.75em;
+    background-color:#d37329;
+     text-transform: uppercase; 
+     border-radius: 5px;
+     border: 0.5px solid #e0701d;
+     margin-bottom: 5%;     
+    }
+         button:hover{
+        background-color: #e0701d;
+        border:#504e4b 2px solid;
+        color: #fff
+        }
+
+    header{
+            background-color: #504e4b;
+            min-height: 80vh ;
+            margin-bottom:0%;
+    }
+        header .container{
+                display: flex;
+                flex-direction: column; 
+                align-items: center;    
+        }
+        header .logo { 
+                max-height: 100px;
+                width: 20%;
+                min-height: 60px;
+                min-width: 80px;
+                padding-top: 5px;
+                padding-bottom: 5%;
+            }
+        nav{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-bottom: 3%;
+
+         }
+            nav a{
+                justify-content: space-between;
+                text-decoration:  none;
+                font-size: 0.75;
+                font-weight: bold;
+                text-transform: uppercase;
+                color:black;  
+                padding: 5PX 12PX;
+            }
+                a:last-child:hover{
+                    background-color: #e0701d;
+                    color:black;
+                    border-radius: 2px;
+                }
+                    header a:hover{
+                        color:#e0701d
+                    }
+    #inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 150vh ;
+        color: #fff;
+        background-image: url("images/cuencadelsol2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+            #inicio button a{
+                color:whitesmoke;
+                text-transform: none;
+            }
+
+    #lugares .container{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+        #lugares img{
+            height: 180px;
+            width: 220px;
+        }
+        #lugares p{
+            display: none;
+        }
+        .carta {
+            padding: 10%;
+            margin:0px;
+            border: #b3b1b1 3px solid;
+        }
+    #evento {
+        background-color: #6d6c6c;
+        text-align: center;
+        padding: 40% 10%;
+    }
+    #formulario{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+        #formulario form{
+            align-items:center ;        
+            padding: 5% 0;
+            background-color: #6d6c6c;
+            padding-top: 10%;
+        }
+            select{
+                max-height: min-content;
+                max-width: min-content;
+                border-width: 0px;
+                border-style: none;
+                color: #777575;
+            }
+            label{
+                font-size: 0.9em;
+                color: #e0701d;
+                text-transform: uppercase;
+            }
+            input {
+                margin: 2%;
+                justify-items: center;
+                text-align: center;
+                border-style: none;
+                border: none;
+            }
+            textarea {
+                height: 120px;
+                width: 170px;
+                font-family: sans-serif;
+                color: #504e4b;
+            }
+            .submit {
+                background-color: #e0701d;
+                border-radius: 2px;
+                color: #2c2b2b;
+                font-size: 1em;
+            }
+footer {
+    background-color: #c0bcbc;
+    border: black 1px solid;
+    text-align:end;
+    color: #000000;
+    font-size: 0.75em;
+    justify-content: flex-end;
+    margin-top: 3%;
+}
+    footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+        footer a{ color: #292828;}
+        footer p { margin: 0%;}
+@media(min-width:720px){
+    header {        min-height: 20px;}
+        header .container{        flex-direction: row;
+        }
+        nav {
+            flex-direction: row;
+            width: 100%;
+            padding-bottom: 0%;
+            justify-content: space-between; 
+        }
+        nav a{
+            padding: 5px, 5px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        header .logo{
+        max-height:100% ;
+            padding-bottom: 0%;
+            width: 100px;
+        }
+    #inicio {
+        max-height: 90vh;
+        text-align: right;
+        align-items:flex-end;
+        padding-right: 10%;
+         background-attachment: fixed;
+        }
+            #inicio p{        font-size: 1.2em;    }
+            #inicio button a{        font-size: 1.5em;    }
+            h1{        font-size: 4em;    }
+            h2{        font-size: 2.5em;    }
+    #lugares .container{        margin-left: 5%;    }
+        #lugares .lugares-items{
+            display: flex;
+            flex-direction: row;
+        }
+        .carta{
+            padding: 2%;
+            margin: 2%;
+            justify-content: space-between;
+        }
+        #lugares p{
+            display: flex;
+            font-size: 1.5em;
+            color: #040404;
+        }
+
+    #evento {
+        height: 600px;
+        padding: 0%  0%;
+        display: flex;
+    }
+        #evento .container{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        }
+         #evento .banner{
+        background-image: url("images/banner-festival-copia.png");
+        height: 80%;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin-top: 2%;
+        margin-left: 2%
+        }
+        #evento .info-evento{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 50%;
+        justify-items: right;
+        justify-content: center center;
+        padding-top: 4%;
+        padding-left: 10%;
+        padding-right: 2%;
+        }
+        .info-evento h2{
+        font-size: 2.5em;
+        text-transform: uppercase;    
+        text-decoration:underline;   
+        }
+        .info-evento p{
+        font-size: 1.5em;
+        color: black
+         }
+        .info-evento h3{        font-size: 2em;    }
+        .info-evento button{        font-weight: bold;  padding: 2% 0%;  }
+    #formulario{
+      display: flex;
+      flex-direction: column;
+    }
+        #formulario .container{
+            display:flex;
+            flex-direction: row;
+        }    
+        #formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+        }
+        #formulario .form{ display: inline-flex;
+            width: 50%;
+        }
+        #formulario p{
+    text-align: center;
+    margin: 0% 25%;
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+        }
+footer {
+    font-size: 1em;
+}
+    footer .container{
+    width: 100%;
+    flex-direction: row;
+    padding: 1%;
+    font-weight: bold;
+    padding-right: 0%;
+    justify-content: center;
+
+    }
+        footer a{
+         padding: 10px 10px 12px 3px;
+        }
+}

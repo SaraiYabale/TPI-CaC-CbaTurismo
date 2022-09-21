@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TurismoCba</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png"  alt="logo Córdoba turísmo"class="logo">
+                
+                <a href="#principal">Cruz del Eje</a>
+                <a href="#info-turismo">Lugares para visitar</a>
+                <a href="#info-evento">Festival Nacional</a>
+                <a href="#inscripcion-participantes">Quiero Participar</a>
+                <a href="#comprar-entradas">Comprá tu entrada</a>
+            </nav>
+        </div>
+    </header>
+
+   <section id="inicio"> <a name="principal"></a>
+        <!--Imagen de fondo cuenca del sol ver config-->
+       <h1 >La Cuenca Del Sol</h1>
+            <p>
+                La cuidad de Cruz del Eje<br> En la región conocida como la Cuenca del Sol,
+                presenta un clima cálido y húmedo la mayor parte del año.<br> En ella, es 
+                protagonista el dique homónimo.<br>
+                Es el mayor productor de aceitunas y aceite de olivas de la región, sus 
+                productos de excelente calidad, tienen la plusvalía de ser artesanales. <br>
+                Cruz del Eje es una cuidad con mucha historia,fue cuna de uno de los mas honorables
+                presidentes de nuesta Nación, así como de distintos artistas que traspasaron
+                los limites geógraficos con su arte, entre otros valores.<br> Pero quizás el dato más 
+                curioso sea qué según se dice fué allí donde nació el "Fernet con coca".<br>
+                Sin dudas, es un lugar que vale la pena conocer.
+             </p>
+           <button><a href=https://www.cordobaturismo.gov.ar/localidad/cruz-del-eje/#:~:text  target="_blank" class="link">
+            Saber más</a></button>
+   </section> 
+
+   <section id="lugares"><a name="info-turismo"></a>
+      <div class="container">
+        <h2>Conocé <br> mas lugares para <span>Visitar</span></h2> 
+        <div class="lugares-items">
+            <div class="carta">
+                <img src="images/dique.jpg" alt="imagen del dique de Cruz del Eje">
+                <h4>Dique de <span>Cruz del Eje</span></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Magni distinctio ducimus, officia saepe necessitatibus eligendi
+                      perferendis veniam atque incidunt laborum harum a, 
+                    amet accusantium ab, delectus iste cumque? Ratione.</p>
+            </div>
+            <div class="carta">
+                <img src="images/catedral.jpg" alt="imágen de la fachada de la Catedral">
+                <h4>Catedral <span>Nuestra Sra. del Carmen</span></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                   Magni distinctio ducimus, officia saepe necessitatibus eligendi 
+                      perferendis veniam atque incidunt laborum harum a, dolorum 
+                     amet accusantium ab, delectus iste cumque? Ratione.</p>
+            </div>
+            <div class="carta">
+                <img src="images/rio.jpg" alt="imagen de un paisaje">
+                <h4>Paisajes naturales como el <span>Rio Quilpo</span></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                   Magni distinctio ducimus, officia saepe necessitatibus eligendi
+                      perferendis veniam atque incidunt laborum harum a, dolorum 
+                      amet accusantium ab, delectus iste cumque? Ratione.</p>
+            </div>
+       </div>
+    </div>
+   </section>
+
+   <section id="evento">
+        <div class="container"><a name="info-evento"></a>
+            <div class="banner"><!--img banner--></div>
+            <div class="info-evento">
+                <h2>Fiesta Nacional del Olivo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Ipsam reiciendis accusamus ad iusto ipsa! Quisquam, voluptas minima reiciendis
+                    debitis fuga culpa adipisci aperiam odio! 
+                    Explicabo, error aut? Reprehenderit, ratione? Unde.</p>
+                    <p id="entradas"><a name="comprar-entradas"></a>
+                        <h3>¿Listo para disfrutar de una verdadera Fiesta?</h3>
+                        <button>Comprá tu anticipada!</button>
+                    </p>
+            </div>
+        </div>
+   </section>
+
+   
+
+   <section id="formulario"><a name="inscripcion-participantes"></a>
+        <div class="conteiner">
+            <div class="info-paricipantes">
+                <h2>¿Querés Formar Parte?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo blanditiis nihil praesentium distinctio quam vitae placeat
+                    ducimus incidunt dolor deserunt sunt, perspiciatis nemo ab impedit. 
+                    Maxime fugiat porro maiores nulla.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo blanditiis nihil praesentium distinctio quam vitae placeat
+                    ducimus incidunt dolor deserunt sunt, perspiciatis nemo ab impedit. 
+                    Maxime fugiat porro maiores nulla</p><!--Acá van la información para participar...-->
+            </div>
+            <div class="form">
+                <form>
+                        <label for="actividad">Actividad que realiza:</label>
+                        <select name="actividad" id="actividad">
+                            <option>Músic@</option>
+                            <option>Comida y/o bebida</option>
+                            <option>Artesanías</option>
+                            <option>Otro</option>
+                        </select>
+                        <input  id="nombre" type="text" name="nombre" placeholder="Nombre Artistico" required>
+
+                        <input id="email"type="email" name="email" placeholder="Email" required>
+                        
+                        <textarea name="comentarios" placeholder="Contanos sobre vos,por que queres Participar,etc.." required> </textarea>
+                        
+                        <input type="file" multiple class="archivos">
+                        <input type="submit" value="Enviar" class="submit">
+                 </form>
+             </div>
+    </div>
+
+   </section>
+
+
+   <footer>
+    <div class="container">
+        <div>
+        <a href="#">Contácto</a>
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Sitios Oficiales</a>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Privacidad del Sitio</a>
+    </div>
+    <div class="copy">
+        <p>&copy; TurismoCba</p>
+    </div>
+    </div>
+   </footer>
+   
+
+
+</body>
+</html>
